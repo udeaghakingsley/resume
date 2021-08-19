@@ -1,25 +1,31 @@
 /** index page **/
-#indexPage{
+#indexPage {
             background-color: black;
             width: auto;
             height: auto;
             margin: 0;
             padding: 0;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
         }
-        .welcomePage{
+        .welcomePage {
             margin: 0 auto;
-            padding: 0;
+            padding: 0.5em 0.5em 0.5em 0.5em;
             width: 1024px;
-            align-content: center;
+            text-align: center;
+            max-width: 100%;
+            overflow: hidden;
     
         }
 
         #name{
             color: white;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 80pt;
+            font-size: 3rem;
             padding: 0.1em 0.1em 0.1em 0.1em;
 
         }
@@ -27,7 +33,7 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: whitesmoke;
             font-style: normal;
-            font-size: 20pt;
+            font-size: 1rem;
         }
 
         #toCv{
@@ -42,8 +48,79 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
-/** picture styling **/
-#myPicture{
-    size: 40px 40px;
-    border-radius: 10px 10px 10px 10px ;
+/** resume styling **/
+.resume{
+    background-color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#desk{
+    display:none;
+}
+#mobile{
+    margin: -10px -10px -10px -10px;
+    width: 100vw;
+
+}
+#pstatement{
+    color: wheat;
+    font-size: large;
+}
+#num{
+    font-style: italic;
+}
+.bio{
+    color: white;
+}
+.experience{
+    color: white;
+}
+.skill{
+    color: WHITE;
+}
+.hobbies{
+    color: white;
+}
+.referees{
+    color: white;
+}
+#refClass{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#hng, #zuri4g{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0.5em;
+}
+
+
+
+@media (min-width: 760px) {
+    #imageanddetails{
+        display: flex;
+        flex-direction: row;
+        flex: content;
+    }
+    #details{
+        padding: 0px 0px 0px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 70%;
+    }
+    #picture{
+        width: 30%;
+        padding: 20px;
+    }
+    #mobile{
+        display:none;
+    }
+    #desk{
+        display: block;
+    }
+    #zuri4g{
+        width: 50%;
+    }
 }
