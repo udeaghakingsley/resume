@@ -58,8 +58,11 @@
 }
 #mobile{
     margin: -10px -10px -10px -10px;
-    width: 760px;
+    width: 100vw;
 
+}
+details{
+    width: 100vw;
 }
 #pstatement{
     color: wheat;
